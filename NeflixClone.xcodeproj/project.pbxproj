@@ -10,7 +10,6 @@
 		F7D05A762AC9FD10005599EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A752AC9FD10005599EC /* AppDelegate.swift */; };
 		F7D05A782AC9FD10005599EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A772AC9FD10005599EC /* SceneDelegate.swift */; };
 		F7D05A7A2AC9FD10005599EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A792AC9FD10005599EC /* ViewController.swift */; };
-		F7D05A7D2AC9FD10005599EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D05A7B2AC9FD10005599EC /* Main.storyboard */; };
 		F7D05A802AC9FD10005599EC /* NeflixClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A7E2AC9FD10005599EC /* NeflixClone.xcdatamodeld */; };
 		F7D05A822AC9FD11005599EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D05A812AC9FD11005599EC /* Assets.xcassets */; };
 		F7D05A852AC9FD11005599EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D05A832AC9FD11005599EC /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 		F7D05A752AC9FD10005599EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7D05A772AC9FD10005599EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F7D05A792AC9FD10005599EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F7D05A7C2AC9FD10005599EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7D05A7F2AC9FD10005599EC /* NeflixClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeflixClone.xcdatamodel; sourceTree = "<group>"; };
 		F7D05A812AC9FD11005599EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7D05A842AC9FD11005599EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				F7D05A752AC9FD10005599EC /* AppDelegate.swift */,
 				F7D05A772AC9FD10005599EC /* SceneDelegate.swift */,
 				F7D05A792AC9FD10005599EC /* ViewController.swift */,
-				F7D05A7B2AC9FD10005599EC /* Main.storyboard */,
 				F7D05A812AC9FD11005599EC /* Assets.xcassets */,
 				F7D05A832AC9FD11005599EC /* LaunchScreen.storyboard */,
 				F7D05A862AC9FD11005599EC /* Info.plist */,
@@ -236,7 +233,6 @@
 			files = (
 				F7D05A852AC9FD11005599EC /* LaunchScreen.storyboard in Resources */,
 				F7D05A822AC9FD11005599EC /* Assets.xcassets in Resources */,
-				F7D05A7D2AC9FD10005599EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F7D05A7B2AC9FD10005599EC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7D05A7C2AC9FD10005599EC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F7D05A832AC9FD11005599EC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +434,6 @@
 				INFOPLIST_FILE = NeflixClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +461,6 @@
 				INFOPLIST_FILE = NeflixClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
