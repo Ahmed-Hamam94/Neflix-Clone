@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7D05A762AC9FD10005599EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A752AC9FD10005599EC /* AppDelegate.swift */; };
+		F7D05A782AC9FD10005599EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A772AC9FD10005599EC /* SceneDelegate.swift */; };
+		F7D05A7A2AC9FD10005599EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A792AC9FD10005599EC /* ViewController.swift */; };
+		F7D05A7D2AC9FD10005599EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D05A7B2AC9FD10005599EC /* Main.storyboard */; };
+		F7D05A802AC9FD10005599EC /* NeflixClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A7E2AC9FD10005599EC /* NeflixClone.xcdatamodeld */; };
+		F7D05A822AC9FD11005599EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D05A812AC9FD11005599EC /* Assets.xcassets */; };
+		F7D05A852AC9FD11005599EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D05A832AC9FD11005599EC /* LaunchScreen.storyboard */; };
+		F7D05A902AC9FD11005599EC /* NeflixCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A8F2AC9FD11005599EC /* NeflixCloneTests.swift */; };
+		F7D05A9A2AC9FD11005599EC /* NeflixCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A992AC9FD11005599EC /* NeflixCloneUITests.swift */; };
+		F7D05A9C2AC9FD11005599EC /* NeflixCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A9B2AC9FD11005599EC /* NeflixCloneUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7D05A8C2AC9FD11005599EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7D05A6A2AC9FD10005599EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7D05A712AC9FD10005599EC;
+			remoteInfo = NeflixClone;
+		};
+		F7D05A962AC9FD11005599EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7D05A6A2AC9FD10005599EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7D05A712AC9FD10005599EC;
+			remoteInfo = NeflixClone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7D05A722AC9FD10005599EC /* NeflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D05A752AC9FD10005599EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7D05A772AC9FD10005599EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F7D05A792AC9FD10005599EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7D05A7C2AC9FD10005599EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7D05A7F2AC9FD10005599EC /* NeflixClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeflixClone.xcdatamodel; sourceTree = "<group>"; };
+		F7D05A812AC9FD11005599EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7D05A842AC9FD11005599EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7D05A862AC9FD11005599EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D05A8B2AC9FD11005599EC /* NeflixCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeflixCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D05A8F2AC9FD11005599EC /* NeflixCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeflixCloneTests.swift; sourceTree = "<group>"; };
+		F7D05A952AC9FD11005599EC /* NeflixCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeflixCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D05A992AC9FD11005599EC /* NeflixCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeflixCloneUITests.swift; sourceTree = "<group>"; };
+		F7D05A9B2AC9FD11005599EC /* NeflixCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeflixCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7D05A6F2AC9FD10005599EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D05A882AC9FD11005599EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D05A922AC9FD11005599EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7D05A692AC9FD10005599EC = {
+			isa = PBXGroup;
+			children = (
+				F7D05A742AC9FD10005599EC /* NeflixClone */,
+				F7D05A8E2AC9FD11005599EC /* NeflixCloneTests */,
+				F7D05A982AC9FD11005599EC /* NeflixCloneUITests */,
+				F7D05A732AC9FD10005599EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7D05A732AC9FD10005599EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7D05A722AC9FD10005599EC /* NeflixClone.app */,
+				F7D05A8B2AC9FD11005599EC /* NeflixCloneTests.xctest */,
+				F7D05A952AC9FD11005599EC /* NeflixCloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7D05A742AC9FD10005599EC /* NeflixClone */ = {
+			isa = PBXGroup;
+			children = (
+				F7D05A752AC9FD10005599EC /* AppDelegate.swift */,
+				F7D05A772AC9FD10005599EC /* SceneDelegate.swift */,
+				F7D05A792AC9FD10005599EC /* ViewController.swift */,
+				F7D05A7B2AC9FD10005599EC /* Main.storyboard */,
+				F7D05A812AC9FD11005599EC /* Assets.xcassets */,
+				F7D05A832AC9FD11005599EC /* LaunchScreen.storyboard */,
+				F7D05A862AC9FD11005599EC /* Info.plist */,
+				F7D05A7E2AC9FD10005599EC /* NeflixClone.xcdatamodeld */,
+			);
+			path = NeflixClone;
+			sourceTree = "<group>";
+		};
+		F7D05A8E2AC9FD11005599EC /* NeflixCloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7D05A8F2AC9FD11005599EC /* NeflixCloneTests.swift */,
+			);
+			path = NeflixCloneTests;
+			sourceTree = "<group>";
+		};
+		F7D05A982AC9FD11005599EC /* NeflixCloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7D05A992AC9FD11005599EC /* NeflixCloneUITests.swift */,
+				F7D05A9B2AC9FD11005599EC /* NeflixCloneUITestsLaunchTests.swift */,
+			);
+			path = NeflixCloneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7D05A712AC9FD10005599EC /* NeflixClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D05A9F2AC9FD11005599EC /* Build configuration list for PBXNativeTarget "NeflixClone" */;
+			buildPhases = (
+				F7D05A6E2AC9FD10005599EC /* Sources */,
+				F7D05A6F2AC9FD10005599EC /* Frameworks */,
+				F7D05A702AC9FD10005599EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeflixClone;
+			productName = NeflixClone;
+			productReference = F7D05A722AC9FD10005599EC /* NeflixClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7D05A8A2AC9FD11005599EC /* NeflixCloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D05AA22AC9FD11005599EC /* Build configuration list for PBXNativeTarget "NeflixCloneTests" */;
+			buildPhases = (
+				F7D05A872AC9FD11005599EC /* Sources */,
+				F7D05A882AC9FD11005599EC /* Frameworks */,
+				F7D05A892AC9FD11005599EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7D05A8D2AC9FD11005599EC /* PBXTargetDependency */,
+			);
+			name = NeflixCloneTests;
+			productName = NeflixCloneTests;
+			productReference = F7D05A8B2AC9FD11005599EC /* NeflixCloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7D05A942AC9FD11005599EC /* NeflixCloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D05AA52AC9FD11005599EC /* Build configuration list for PBXNativeTarget "NeflixCloneUITests" */;
+			buildPhases = (
+				F7D05A912AC9FD11005599EC /* Sources */,
+				F7D05A922AC9FD11005599EC /* Frameworks */,
+				F7D05A932AC9FD11005599EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7D05A972AC9FD11005599EC /* PBXTargetDependency */,
+			);
+			name = NeflixCloneUITests;
+			productName = NeflixCloneUITests;
+			productReference = F7D05A952AC9FD11005599EC /* NeflixCloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7D05A6A2AC9FD10005599EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					F7D05A712AC9FD10005599EC = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					F7D05A8A2AC9FD11005599EC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = F7D05A712AC9FD10005599EC;
+					};
+					F7D05A942AC9FD11005599EC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = F7D05A712AC9FD10005599EC;
+					};
+				};
+			};
+			buildConfigurationList = F7D05A6D2AC9FD10005599EC /* Build configuration list for PBXProject "NeflixClone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7D05A692AC9FD10005599EC;
+			productRefGroup = F7D05A732AC9FD10005599EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7D05A712AC9FD10005599EC /* NeflixClone */,
+				F7D05A8A2AC9FD11005599EC /* NeflixCloneTests */,
+				F7D05A942AC9FD11005599EC /* NeflixCloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7D05A702AC9FD10005599EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D05A852AC9FD11005599EC /* LaunchScreen.storyboard in Resources */,
+				F7D05A822AC9FD11005599EC /* Assets.xcassets in Resources */,
+				F7D05A7D2AC9FD10005599EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D05A892AC9FD11005599EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D05A932AC9FD11005599EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7D05A6E2AC9FD10005599EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D05A7A2AC9FD10005599EC /* ViewController.swift in Sources */,
+				F7D05A762AC9FD10005599EC /* AppDelegate.swift in Sources */,
+				F7D05A782AC9FD10005599EC /* SceneDelegate.swift in Sources */,
+				F7D05A802AC9FD10005599EC /* NeflixClone.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D05A872AC9FD11005599EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D05A902AC9FD11005599EC /* NeflixCloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D05A912AC9FD11005599EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D05A9C2AC9FD11005599EC /* NeflixCloneUITestsLaunchTests.swift in Sources */,
+				F7D05A9A2AC9FD11005599EC /* NeflixCloneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7D05A8D2AC9FD11005599EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7D05A712AC9FD10005599EC /* NeflixClone */;
+			targetProxy = F7D05A8C2AC9FD11005599EC /* PBXContainerItemProxy */;
+		};
+		F7D05A972AC9FD11005599EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7D05A712AC9FD10005599EC /* NeflixClone */;
+			targetProxy = F7D05A962AC9FD11005599EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7D05A7B2AC9FD10005599EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D05A7C2AC9FD10005599EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7D05A832AC9FD11005599EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D05A842AC9FD11005599EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7D05A9D2AC9FD11005599EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7D05A9E2AC9FD11005599EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7D05AA02AC9FD11005599EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TP8LF837KP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeflixClone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.future.NeflixClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7D05AA12AC9FD11005599EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TP8LF837KP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeflixClone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.future.NeflixClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7D05AA32AC9FD11005599EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TP8LF837KP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.future.NeflixCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeflixClone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NeflixClone";
+			};
+			name = Debug;
+		};
+		F7D05AA42AC9FD11005599EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TP8LF837KP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.future.NeflixCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeflixClone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NeflixClone";
+			};
+			name = Release;
+		};
+		F7D05AA62AC9FD11005599EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TP8LF837KP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.future.NeflixCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NeflixClone;
+			};
+			name = Debug;
+		};
+		F7D05AA72AC9FD11005599EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TP8LF837KP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.future.NeflixCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NeflixClone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7D05A6D2AC9FD10005599EC /* Build configuration list for PBXProject "NeflixClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D05A9D2AC9FD11005599EC /* Debug */,
+				F7D05A9E2AC9FD11005599EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7D05A9F2AC9FD11005599EC /* Build configuration list for PBXNativeTarget "NeflixClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D05AA02AC9FD11005599EC /* Debug */,
+				F7D05AA12AC9FD11005599EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7D05AA22AC9FD11005599EC /* Build configuration list for PBXNativeTarget "NeflixCloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D05AA32AC9FD11005599EC /* Debug */,
+				F7D05AA42AC9FD11005599EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7D05AA52AC9FD11005599EC /* Build configuration list for PBXNativeTarget "NeflixCloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D05AA62AC9FD11005599EC /* Debug */,
+				F7D05AA72AC9FD11005599EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7D05A7E2AC9FD10005599EC /* NeflixClone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7D05A7F2AC9FD10005599EC /* NeflixClone.xcdatamodel */,
+			);
+			currentVersion = F7D05A7F2AC9FD10005599EC /* NeflixClone.xcdatamodel */;
+			path = NeflixClone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F7D05A6A2AC9FD10005599EC /* Project object */;
+}
