@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		F7D05A762AC9FD10005599EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A752AC9FD10005599EC /* AppDelegate.swift */; };
 		F7D05A782AC9FD10005599EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A772AC9FD10005599EC /* SceneDelegate.swift */; };
-		F7D05A7A2AC9FD10005599EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A792AC9FD10005599EC /* ViewController.swift */; };
+		F7D05A7A2AC9FD10005599EC /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A792AC9FD10005599EC /* MainTabViewController.swift */; };
 		F7D05A802AC9FD10005599EC /* NeflixClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A7E2AC9FD10005599EC /* NeflixClone.xcdatamodeld */; };
 		F7D05A822AC9FD11005599EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D05A812AC9FD11005599EC /* Assets.xcassets */; };
 		F7D05A852AC9FD11005599EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D05A832AC9FD11005599EC /* LaunchScreen.storyboard */; };
 		F7D05A902AC9FD11005599EC /* NeflixCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A8F2AC9FD11005599EC /* NeflixCloneTests.swift */; };
 		F7D05A9A2AC9FD11005599EC /* NeflixCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A992AC9FD11005599EC /* NeflixCloneUITests.swift */; };
 		F7D05A9C2AC9FD11005599EC /* NeflixCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A9B2AC9FD11005599EC /* NeflixCloneUITestsLaunchTests.swift */; };
+		F7D05AAA2ACA489B005599EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05AA92ACA489B005599EC /* HomeViewController.swift */; };
+		F7D05AAC2ACA48AB005599EC /* UpcominViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05AAB2ACA48AB005599EC /* UpcominViewController.swift */; };
+		F7D05AAE2ACA48C3005599EC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05AAD2ACA48C3005599EC /* SearchViewController.swift */; };
+		F7D05AB02ACA48DC005599EC /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05AAF2ACA48DC005599EC /* DownloadsViewController.swift */; };
+		F7D05AB72ACA5312005599EC /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05AB62ACA5312005599EC /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,7 @@
 		F7D05A722AC9FD10005599EC /* NeflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D05A752AC9FD10005599EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7D05A772AC9FD10005599EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F7D05A792AC9FD10005599EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7D05A792AC9FD10005599EC /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		F7D05A7F2AC9FD10005599EC /* NeflixClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeflixClone.xcdatamodel; sourceTree = "<group>"; };
 		F7D05A812AC9FD11005599EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7D05A842AC9FD11005599EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		F7D05A952AC9FD11005599EC /* NeflixCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeflixCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D05A992AC9FD11005599EC /* NeflixCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeflixCloneUITests.swift; sourceTree = "<group>"; };
 		F7D05A9B2AC9FD11005599EC /* NeflixCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeflixCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7D05AA92ACA489B005599EC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F7D05AAB2ACA48AB005599EC /* UpcominViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcominViewController.swift; sourceTree = "<group>"; };
+		F7D05AAD2ACA48C3005599EC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F7D05AAF2ACA48DC005599EC /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		F7D05AB62ACA5312005599EC /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,15 @@
 		F7D05A742AC9FD10005599EC /* NeflixClone */ = {
 			isa = PBXGroup;
 			children = (
+				F7D05AB52ACA52A5005599EC /* Managers */,
+				F7D05AB42ACA5299005599EC /* Resourcers */,
+				F7D05AB32ACA5274005599EC /* Models */,
+				F7D05AB22ACA526B005599EC /* Views */,
+				F7D05AB12ACA5256005599EC /* ViewModels */,
+				F7D05AA82ACA4882005599EC /* Controllers */,
 				F7D05A752AC9FD10005599EC /* AppDelegate.swift */,
 				F7D05A772AC9FD10005599EC /* SceneDelegate.swift */,
-				F7D05A792AC9FD10005599EC /* ViewController.swift */,
+				F7D05A792AC9FD10005599EC /* MainTabViewController.swift */,
 				F7D05A812AC9FD11005599EC /* Assets.xcassets */,
 				F7D05A832AC9FD11005599EC /* LaunchScreen.storyboard */,
 				F7D05A862AC9FD11005599EC /* Info.plist */,
@@ -125,6 +141,53 @@
 				F7D05A9B2AC9FD11005599EC /* NeflixCloneUITestsLaunchTests.swift */,
 			);
 			path = NeflixCloneUITests;
+			sourceTree = "<group>";
+		};
+		F7D05AA82ACA4882005599EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7D05AA92ACA489B005599EC /* HomeViewController.swift */,
+				F7D05AAB2ACA48AB005599EC /* UpcominViewController.swift */,
+				F7D05AAD2ACA48C3005599EC /* SearchViewController.swift */,
+				F7D05AAF2ACA48DC005599EC /* DownloadsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F7D05AB12ACA5256005599EC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F7D05AB22ACA526B005599EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7D05AB62ACA5312005599EC /* CollectionViewTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7D05AB32ACA5274005599EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7D05AB42ACA5299005599EC /* Resourcers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourcers;
+			sourceTree = "<group>";
+		};
+		F7D05AB52ACA52A5005599EC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D05A7A2AC9FD10005599EC /* ViewController.swift in Sources */,
+				F7D05AAA2ACA489B005599EC /* HomeViewController.swift in Sources */,
+				F7D05AAE2ACA48C3005599EC /* SearchViewController.swift in Sources */,
+				F7D05AB02ACA48DC005599EC /* DownloadsViewController.swift in Sources */,
+				F7D05A7A2AC9FD10005599EC /* MainTabViewController.swift in Sources */,
+				F7D05AAC2ACA48AB005599EC /* UpcominViewController.swift in Sources */,
+				F7D05AB72ACA5312005599EC /* CollectionViewTableViewCell.swift in Sources */,
 				F7D05A762AC9FD10005599EC /* AppDelegate.swift in Sources */,
 				F7D05A782AC9FD10005599EC /* SceneDelegate.swift in Sources */,
 				F7D05A802AC9FD10005599EC /* NeflixClone.xcdatamodeld in Sources */,
