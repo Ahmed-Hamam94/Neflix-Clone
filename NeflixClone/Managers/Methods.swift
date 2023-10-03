@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+enum Methods{
+    
+    case Get
+    case Post
+    case Delete
+    case Patch
+    
+}
