@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    let sectionTitles: [String] = ["Trending Movies","Popular","Trending TV","Upcoming Movies","Top Rated"]
+    let sectionTitles: [String] = ["Trending Movies","Trending TV","Popular","Upcoming Movies","Top Rated"]
     
     private let homeFeedTable: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
@@ -23,26 +23,26 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemBackground
-        configureTableView()
-        configureNavBar()
+        setUpUI()
         
-        homeViewModel = HomeViewModel(service: ApiCaller())
+        homeViewModel = HomeViewModel(service: TrendingMovies(), tvService: TrendingTV(), upComing_service: upComingMovies(), popular_service: PopularMovies(), topRated_service: TopRated())
         
-        homeViewModel?.callFuncToGetTrendingMovies(completionHandler: { isFinished in
-            if !isFinished {
-               //show indicator
-            }else{
-                //dissmiss
-            }
-        })
-        
-      
+        getMovies()
+        getTV()
+        getUpComing()
+        getPopular()
+        getTopRatedMovies()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         homeFeedTable.frame = view.bounds
+    }
+    
+    private func setUpUI(){
+        view.backgroundColor = .systemBackground
+        configureTableView()
+        configureNavBar()
     }
     
     private func configureTableView(){
@@ -62,6 +62,56 @@ class HomeViewController: UIViewController {
             UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
         ]
         navigationController?.navigationBar.tintColor = .label
+    }
+    
+    private func getMovies(){
+        homeViewModel?.callFuncToGetTrendingMovies(completionHandler: { isFinished in
+            if !isFinished {
+                //show indicator
+            }else{
+                //dissmiss
+            }
+        })
+    }
+    
+    private func getTV(){
+        homeViewModel?.callFuncToGetTrendingTV(completionHandler: { isFinished in
+            if !isFinished {
+                //show indicator
+            }else{
+                //dissmiss
+            }
+        })
+    }
+    
+    private func getUpComing(){
+        homeViewModel?.callFuncToGetUpComing(completionHandler: { isFinished in
+            if !isFinished {
+                //show indicator
+            }else{
+                //dissmiss
+            }
+        })
+    }
+    
+    private func getPopular(){
+        homeViewModel?.callFuncToGetPopular(completionHandler: { isFinished in
+            if !isFinished {
+                //show indicator
+            }else{
+                //dissmiss
+            }
+        })
+    }
+    
+    private func getTopRatedMovies(){
+        homeViewModel?.callFuncToGetTopRated(completionHandler: { isFinished in
+            if !isFinished {
+                //show indicator
+            }else{
+                //dissmiss
+            }
+        })
     }
 }
 
@@ -100,16 +150,23 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let header = view as? UITableViewHeaderFooterView else {return}
         
-        var content = header.defaultContentConfiguration()
-        content.text = sectionTitles[section]
-        content.textProperties.font = .systemFont(ofSize: 18, weight: .semibold)
-        content.textProperties.color = .label
-        header.contentView.frame = CGRect(x: header.bounds.origin.x + 20,
-                                          y: header.bounds.origin.y,
-                                          width: 100,
-                                          height: header.bounds.height)
-        
-        header.contentConfiguration = content
+        header.textLabel?.text = header.textLabel?.text?.capitalizedFirstLetter()
+        header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
+        header.textLabel?.frame = CGRect(x: header.bounds.origin.x + 20,
+                                         y: header.bounds.origin.y,
+                                         width: 100,
+                                         height: header.bounds.height)
+        header.textLabel?.textColor = .label
+        //        var content = header.defaultContentConfiguration()
+        //        content.text = sectionTitles[section]
+        //        content.textProperties.font = .systemFont(ofSize: 18, weight: .semibold)
+        //        content.textProperties.color = .label
+        //        header.contentView.frame = CGRect(x: header.bounds.origin.x + 20,
+        //                                          y: header.bounds.origin.y,
+        //                                          width: 100,
+        //                                          height: header.bounds.height)
+        //
+        //        header.contentConfiguration = content
         
     }
     
