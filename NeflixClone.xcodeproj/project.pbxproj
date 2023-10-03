@@ -25,6 +25,8 @@
 		F7A8A9582ACC7A8500E20E77 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A8A9572ACC7A8500E20E77 /* Popular.swift */; };
 		F7A8A95A2ACCCEB400E20E77 /* TopRated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A8A9592ACCCEB400E20E77 /* TopRated.swift */; };
 		F7A8A95C2ACCD5D900E20E77 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A8A95B2ACCD5D800E20E77 /* TitleCollectionViewCell.swift */; };
+		F7A8A95F2ACCDC2100E20E77 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F7A8A95E2ACCDC2100E20E77 /* SDWebImage */; };
+		F7A8A9612ACCDC2100E20E77 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F7A8A9602ACCDC2100E20E77 /* SDWebImageMapKit */; };
 		F7D05A762AC9FD10005599EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A752AC9FD10005599EC /* AppDelegate.swift */; };
 		F7D05A782AC9FD10005599EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A772AC9FD10005599EC /* SceneDelegate.swift */; };
 		F7D05A7A2AC9FD10005599EC /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D05A792AC9FD10005599EC /* MainTabViewController.swift */; };
@@ -102,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A8A9612ACCDC2100E20E77 /* SDWebImageMapKit in Frameworks */,
+				F7A8A95F2ACCDC2100E20E77 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +272,10 @@
 			dependencies = (
 			);
 			name = NeflixClone;
+			packageProductDependencies = (
+				F7A8A95E2ACCDC2100E20E77 /* SDWebImage */,
+				F7A8A9602ACCDC2100E20E77 /* SDWebImageMapKit */,
+			);
 			productName = NeflixClone;
 			productReference = F7D05A722AC9FD10005599EC /* NeflixClone.app */;
 			productType = "com.apple.product-type.application";
@@ -340,6 +348,9 @@
 				Base,
 			);
 			mainGroup = F7D05A692AC9FD10005599EC;
+			packageReferences = (
+				F7A8A95D2ACCDC2100E20E77 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = F7D05A732AC9FD10005599EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -740,6 +751,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F7A8A95D2ACCDC2100E20E77 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7A8A95E2ACCDC2100E20E77 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7A8A95D2ACCDC2100E20E77 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		F7A8A9602ACCDC2100E20E77 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7A8A95D2ACCDC2100E20E77 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F7D05A7E2AC9FD10005599EC /* NeflixClone.xcdatamodeld */ = {
