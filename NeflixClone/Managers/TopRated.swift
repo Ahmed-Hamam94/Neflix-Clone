@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+protocol TopRatedProtocol {
+    func getTopRated(completion: @escaping (Result<[Movie], APIError>)-> Void)
+}
+
+class TopRated: TopRatedProtocol {
+    
+    func getTopRated(completion: @escaping (Result<[Movie], APIError>) -> Void) {
+        NetworkManager.shared.request(endPoint: EndPoint.topRated, method: .Get, completion: completion)
+    }
+    
+    
+    
+}
