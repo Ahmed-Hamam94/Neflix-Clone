@@ -11,7 +11,7 @@ struct Upcoming: Codable {
 
     let dates: Dates?
     let page: Int?
-    let results: [ComingMovies]?
+    let results: [Movie]?
     let totalPages: Int?
     let totalResults: Int?
 
