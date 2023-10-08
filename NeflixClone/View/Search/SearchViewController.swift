@@ -26,6 +26,7 @@ class SearchViewController: UIViewController {
     private var searchMovies: [Movie] = [Movie]()
     
     var searchViewModel: SearchViewModel?
+    var videoPreviewVM = VideoPreviewViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +78,21 @@ searchViewModel = SearchViewModel(service: SearchMovies())
             }
         }
     }
+    
+    private func getMoviePreview(movieTitle:String, titleOverview: String) {
+        
+        videoPreviewVM.getYoutubeMovie(movieTitle: movieTitle, titleOverview: titleOverview) { [weak self] videoElement in
+            guard let self else {return}
+            guard let videoElement else {return}
+            let moviePreview = MoviePreview(title: movieTitle, titleOverview: titleOverview, youtubeView: videoElement)
+        
+            DispatchQueue.main.async {
+                                   let vc = VideoPreviewViewController()
+                                   vc.configureComponentsWithData(with: moviePreview)
+                                   self.navigationController?.pushViewController(vc, animated: true)
+                               }
+        }
+    }
 }
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
@@ -104,23 +120,10 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         guard let movieTitle = movie.originalTitle ?? movie.originalName else {return}
         guard let titleOverview = searchMovies[indexPath.row].overview else {return}
         
-        YoutubeSearch.get_YoutubeSearch(query: movieTitle + " trailer") { [weak self] result in
-            guard let self else {return}
-            switch result {
-            case .success(let videoElement):
-                
-                let moviePreview = MoviePreview(title: movieTitle, titleOverview: titleOverview, youtubeView: videoElement)
-                DispatchQueue.main.async {
-                    let vc = VideoPreviewViewController()
-                    vc.configureComponentsWithData(with: moviePreview)
-                    self.navigationController?.pushViewController(vc, animated: true)
-                }
-                
-                
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
+        getMoviePreview(movieTitle: movieTitle, titleOverview: titleOverview)
+        
+
+
     }
 }
 
