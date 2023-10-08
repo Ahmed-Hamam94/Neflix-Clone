@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct MoviePreview{
+    let title: String
+    let titleOverview: String
+    let youtubeView: VideoElement
+}
