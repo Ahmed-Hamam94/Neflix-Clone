@@ -13,4 +13,5 @@ struct ApiResponse<T: Codable>: Codable {
     let results: T?  
     let totalPages: Int?
     let totalResults: Int?
+    
 }
