@@ -15,10 +15,11 @@ protocol TrendingMoviesVMProtocol {
     func callFuncToGetTopRated(completionHandler:@escaping (Bool) -> Void)
 
     var bindingResult: (()->())? {get set}
+    var bindingMovieResult: (([Movie]?)->())? {get set}
     
     var trendingMovies: [Movie]? {get set}
-    var trendinTV: [TV]? {get set}
-    var upComing: [ComingMovies]? {get set}
+    var trendinTV: [Movie]? {get set}
+    var upComing: [Movie]? {get set}
     var popularMovies: [Movie]? {get set}
     var topRatedMovies: [Movie]? {get set}
 }
@@ -33,20 +34,21 @@ class HomeViewModel: TrendingMoviesVMProtocol{
     var topRated_service: TopRatedProtocol?
     
     var bindingResult: (()->())?
+    var bindingMovieResult: (([Movie]?)->())?
     
     var trendingMovies: [Movie]? {
         didSet{
-            bindingResult?()
+            bindingMovieResult?(trendingMovies)
         }
     }
     
-    var trendinTV: [TV]? {
+    var trendinTV: [Movie]? {
         didSet {
             bindingResult?()
         }
     }
     
-    var upComing: [ComingMovies]? {
+    var upComing: [Movie]? {
         didSet{
             bindingResult?()
         }
@@ -74,12 +76,13 @@ class HomeViewModel: TrendingMoviesVMProtocol{
     
     
     func callFuncToGetTrendingMovies(completionHandler:@escaping (Bool) -> Void){
+        
         service?.getTrendingMovies(completion: { [weak self] result in
             completionHandler(false)
             switch result {
             case .success(let movies):
                 print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-               print(movies)
+             //  print(movies)
                 self?.trendingMovies = movies
             case .failure(let error):
                 print(error.localizedDescription)
@@ -87,30 +90,22 @@ class HomeViewModel: TrendingMoviesVMProtocol{
             completionHandler(true)
         })
         
-      
-        
-    }
-    
-    func callFuncToGetTrendingTV(completionHandler:@escaping (Bool) -> Void){
-        
         tvService?.getTrendingTV(completion: { [weak self] result in
-            
+
             completionHandler(false)
-            
+
             switch result {
             case .success(let tv):
                 print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
-                print(tv)
+             // print(tv)
                 self?.trendinTV = tv
             case .failure(let error):
                 print(error.localizedDescription)
             }
-            
+
             completionHandler(true)
         })
-    }
-    
-    func callFuncToGetUpComing(completionHandler:@escaping (Bool) -> Void){
+        
         
         upComing_service?.getUpComingMovies(completion: { [weak self] result in
             
@@ -119,7 +114,7 @@ class HomeViewModel: TrendingMoviesVMProtocol{
             switch result {
             case .success(let upComingMovies):
                 print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
-                print(upComingMovies)
+             //   print(upComingMovies)
                 self?.upComing = upComingMovies
             case .failure(let error):
                 print("fail???>>\(error.localizedDescription)")
@@ -128,32 +123,26 @@ class HomeViewModel: TrendingMoviesVMProtocol{
             completionHandler(true)
         })
         
-     
-    }
-
-    func callFuncToGetPopular(completionHandler:@escaping (Bool) -> Void){
+        
         popular_service?.getPopularMovies(completion: { [weak self] result in
             completionHandler(false)
             switch result {
             case .success(let popularMovies):
                 print("{}}{}{}{}{}{{}{}{}{}{}{{}{}{}{}{}{}{}{}{{}{}{}{}{}{}{}{}")
-               print(popularMovies)
+             //  print(popularMovies)
                 self?.popularMovies = popularMovies
             case .failure(let error):
                 print(error.localizedDescription)
             }
             completionHandler(true)
         })
-    }
-    
-    func callFuncToGetTopRated(completionHandler:@escaping (Bool) -> Void){
         
         topRated_service?.getTopRated(completion: { [weak self] result in
             completionHandler(false)
             switch result {
             case .success(let topRatedMovies):
                 print("++++______+++++++______+++++++_______++++++")
-               print(topRatedMovies)
+             //  print(topRatedMovies)
                 self?.topRatedMovies = topRatedMovies
             case .failure(let error):
                 print(error.localizedDescription)
@@ -161,6 +150,27 @@ class HomeViewModel: TrendingMoviesVMProtocol{
             completionHandler(true)
         })
     }
+    
+    func callFuncToGetTrendingTV(completionHandler:@escaping (Bool) -> Void){
+        
+      
+    }
+    
+    func callFuncToGetUpComing(completionHandler:@escaping (Bool) -> Void){
+        
+      
+        
+     
+    }
 
+    func callFuncToGetPopular(completionHandler:@escaping (Bool) -> Void){
+     
+    }
+    
+    func callFuncToGetTopRated(completionHandler:@escaping (Bool) -> Void){
+        
+      
+    }
+   
     
 }

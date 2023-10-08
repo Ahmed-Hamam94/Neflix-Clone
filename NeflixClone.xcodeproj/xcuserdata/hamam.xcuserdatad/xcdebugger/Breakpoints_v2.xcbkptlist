@@ -30,8 +30,8 @@
             filePath = "NeflixClone/Managers/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "handleResponse(result:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "NeflixClone/ViewModel/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "callFuncToGetUpComing(completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -87,46 +87,406 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A5FAA363-CBAA-4A76-A239-389FCCF54752"
+            uuid = "91E17AC9-291A-48C6-AD40-23750E1E27EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeflixClone/Managers/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "handleResponse(result:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91F44857-A15E-444F-84E4-013703ECA4D8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeflixClone/View/CollectionViewTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "configure(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BEE2D4B5-EA0F-4BAE-AF54-046C6525526B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NeflixClone/View/Controller/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A5FAA363-CBAA-4A76-A239-389FCCF54752 - 297117003bdffcd9"
+                  uuid = "BEE2D4B5-EA0F-4BAE-AF54-046C6525526B - e2ac7c0a13b3cfc2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "NeflixClone.HomeViewController.viewDidLoad() -&gt; ()"
+                  symbolName = "closure #2 () -&gt; () in NeflixClone.HomeViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
                   moduleName = "NeflixClone"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/View/Controller/HomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "364">
+                  startingLineNumber = "172"
+                  endingLineNumber = "172"
+                  offsetFromSymbolStart = "84">
                </Location>
                <Location
-                  uuid = "A5FAA363-CBAA-4A76-A239-389FCCF54752 - 4103481d6e242a25"
+                  uuid = "BEE2D4B5-EA0F-4BAE-AF54-046C6525526B - e2ac7c0a13b3cfc2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;NeflixClone.ComingMovies&gt;&gt;) -&gt; () in NeflixClone.HomeViewController.viewDidLoad() -&gt; ()"
+                  symbolName = "closure #2 () -&gt; () in NeflixClone.HomeViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
                   moduleName = "NeflixClone"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/View/Controller/HomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
+                  startingLineNumber = "172"
+                  endingLineNumber = "172"
+                  offsetFromSymbolStart = "344">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95BE195A-EF6E-4CDE-B047-E5B2FCC800C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeflixClone/View/Controller/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A77A76E-AA88-4434-9158-9A6D31D67FC8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeflixClone/View/CollectionViewTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "CollectionViewTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2A77A76E-AA88-4434-9158-9A6D31D67FC8 - c05e64d229aa256d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.CollectionViewTableViewCell.titles.getter : Swift.Array&lt;NeflixClone.Movie&gt;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/View/CollectionViewTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "2A77A76E-AA88-4434-9158-9A6D31D67FC8 - 74b9a779da41d19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.CollectionViewTableViewCell.titles.setter : Swift.Array&lt;NeflixClone.Movie&gt;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/View/CollectionViewTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "2A77A76E-AA88-4434-9158-9A6D31D67FC8 - 99f72f8ce61cc768"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.CollectionViewTableViewCell.titles.modify : Swift.Array&lt;NeflixClone.Movie&gt;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/View/CollectionViewTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "2A77A76E-AA88-4434-9158-9A6D31D67FC8 - 16184c8818a1ff12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.CollectionViewTableViewCell.titles.modify : Swift.Array&lt;NeflixClone.Movie&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/View/CollectionViewTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "2A77A76E-AA88-4434-9158-9A6D31D67FC8 - 1704e9dcf0c1cf57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.CollectionViewTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; NeflixClone.CollectionViewTableViewCell"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/View/CollectionViewTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "2A77A76E-AA88-4434-9158-9A6D31D67FC8 - 520e8d9b4f29737a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.CollectionViewTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;NeflixClone.CollectionViewTableViewCell&gt;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/View/CollectionViewTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FBC082C-D5F3-403B-91A1-959E101EC1C2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeflixClone/ViewModel/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "trendinTV"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5FBC082C-D5F3-403B-91A1-959E101EC1C2 - 76971d78ae96cf1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.HomeViewModel.trendinTV.getter : Swift.Optional&lt;Swift.Array&lt;NeflixClone.Movie&gt;&gt;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "5FBC082C-D5F3-403B-91A1-959E101EC1C2 - 908864f95dbc5703"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.HomeViewModel.trendinTV.setter : Swift.Optional&lt;Swift.Array&lt;NeflixClone.Movie&gt;&gt;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "5FBC082C-D5F3-403B-91A1-959E101EC1C2 - 8337f5c41a2b3112"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.HomeViewModel.trendinTV.modify : Swift.Optional&lt;Swift.Array&lt;NeflixClone.Movie&gt;&gt;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "5FBC082C-D5F3-403B-91A1-959E101EC1C2 - 4e3c245a814fee50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.HomeViewModel.trendinTV.modify : Swift.Optional&lt;Swift.Array&lt;NeflixClone.Movie&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DB91A14-473C-49E7-813C-4135B546B9C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeflixClone/ViewModel/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "trendingMovies"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "4DB91A14-473C-49E7-813C-4135B546B9C6 - f7736627cc7e9457"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.HomeViewModel.trendingMovies.getter : Swift.Optional&lt;Swift.Array&lt;NeflixClone.Movie&gt;&gt;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "4DB91A14-473C-49E7-813C-4135B546B9C6 - 916fb99dd60ba43f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.HomeViewModel.trendingMovies.setter : Swift.Optional&lt;Swift.Array&lt;NeflixClone.Movie&gt;&gt;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "4DB91A14-473C-49E7-813C-4135B546B9C6 - 590d18ee77286859"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.HomeViewModel.trendingMovies.modify : Swift.Optional&lt;Swift.Array&lt;NeflixClone.Movie&gt;&gt;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "4DB91A14-473C-49E7-813C-4135B546B9C6 - f2611d58f2c5291b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.HomeViewModel.trendingMovies.modify : Swift.Optional&lt;Swift.Array&lt;NeflixClone.Movie&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70F7270B-F850-4B68-9A62-1F55BB75B0E9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeflixClone/View/Controller/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "70F7270B-F850-4B68-9A62-1F55BB75B0E9 - 54eca5b59b21eeb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeflixClone.HomeViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/View/Controller/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "868">
+               </Location>
+               <Location
+                  uuid = "70F7270B-F850-4B68-9A62-1F55BB75B0E9 - e2ac7c0a13b3cfed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in NeflixClone.HomeViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "NeflixClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hamam/Documents/Swift/NeflixClone/NeflixClone/View/Controller/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
                   offsetFromSymbolStart = "48">
                </Location>
             </Locations>
@@ -135,17 +495,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "91E17AC9-291A-48C6-AD40-23750E1E27EB"
-            shouldBeEnabled = "No"
+            uuid = "80F72AC9-1EBA-4BC0-A150-B0EE57701388"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NeflixClone/Managers/NetworkManager.swift"
+            filePath = "NeflixClone/ViewModel/UpcomingViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "handleResponse(result:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "UpcomingViewModel"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

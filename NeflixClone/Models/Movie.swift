@@ -23,7 +23,10 @@ import Foundation
 //
 //}
 struct Movie: Codable {
-
+    let name: String?//
+    let originalName: String?//
+    let firstAirDate: String?//
+    let originCountry: [String]?//
     let adult: Bool?
     let backdropPath: String?
     let id: Int?
@@ -42,6 +45,12 @@ struct Movie: Codable {
     
 
     private enum CodingKeys: String, CodingKey {
+     
+        case name = "name"
+        case originalName = "original_name"
+        case firstAirDate = "first_air_date"
+        case originCountry = "origin_country"
+        //
         case adult = "adult"
         case backdropPath = "backdrop_path"
         case id = "id"
@@ -57,6 +66,7 @@ struct Movie: Codable {
         case video = "video"
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
+       
     }
 
 }
