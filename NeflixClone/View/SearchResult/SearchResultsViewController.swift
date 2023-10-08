@@ -33,6 +33,7 @@ class SearchResultsViewController: UIViewController {
   
      var searchMovies: [Movie] = [Movie]()
     weak var searchResultDelegate: SearchResultsViewControllerDelegate?
+    var videoPreviewVM = VideoPreviewViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +57,16 @@ class SearchResultsViewController: UIViewController {
         searchResultCollectionView.dataSource = self
     }
   
+    private func getMoviePreview(movieTitle:String, titleOverview: String) {
+        
+        videoPreviewVM.getYoutubeMovie(movieTitle: movieTitle, titleOverview: titleOverview) { [weak self] videoElement in
+            guard let self else {return}
+            guard let videoElement else {return}
+            let moviePreview = MoviePreview(title: movieTitle, titleOverview: titleOverview, youtubeView: videoElement)
+        
+            self.searchResultDelegate?.searchResultsViewControllerDidTap(model: moviePreview)
+        }
+    }
 
 }
 
@@ -80,20 +91,8 @@ extension SearchResultsViewController: UICollectionViewDelegate, UICollectionVie
         let movie = searchMovies[indexPath.row]
         guard let movieTitle = movie.originalTitle ?? movie.originalName else {return}
         guard let titleOverview = searchMovies[indexPath.row].overview else {return}
-                    
-        YoutubeSearch.get_YoutubeSearch(query: movieTitle + " trailer") { [weak self] result in
-            guard let self else {return}
-                  switch result {
-                  case .success(let videoElement):
-                    
-                     let moviePreview = MoviePreview(title: movieTitle, titleOverview: titleOverview, youtubeView: videoElement)
-                      
-                      self.searchResultDelegate?.searchResultsViewControllerDidTap(model: moviePreview)
-                      
-                  case .failure(let error):
-                      print(error.localizedDescription)
-                  }
-              }
+        
+        getMoviePreview(movieTitle: movieTitle, titleOverview: titleOverview)
     
     }
     
