@@ -18,6 +18,7 @@ class CollectionViewTableViewCell: UITableViewCell {
     
     private var titles: [Movie] = [Movie]()
     weak var delegate: CollectionViewTableViewCellDelegate?
+    var videoPreviewVM = VideoPreviewViewModel()
     
     private let collectionView: UICollectionView = {
         let layOut = UICollectionViewFlowLayout()
@@ -56,6 +57,33 @@ class CollectionViewTableViewCell: UITableViewCell {
             self?.collectionView.reloadData()
         }
     }
+    
+    private func getMoviePreview(movieTitle:String, titleOverview: String) {
+        
+        videoPreviewVM.getYoutubeMovie(movieTitle: movieTitle, titleOverview: titleOverview) { [weak self] videoElement in
+            guard let self else {return}
+            guard let videoElement else {return}
+            let moviePreview = MoviePreview(title: movieTitle, titleOverview: titleOverview, youtubeView: videoElement)
+        
+            self.delegate?.collectionViewTableViewCellDidTap(self, model: moviePreview)
+        }
+    }
+    
+    private func downloadMovieAt(indexPath: IndexPath){
+      //  print("Downloading \(titles[indexPath.row].originalName ?? titles[indexPath.row].originalTitle ?? "")")
+        let movie = titles[indexPath.row]
+        DataPersistenceManager.shared.downloadMovieWith(model: movie) { result in
+            switch result {
+            case .success():
+                print("Downloaded to DataBase")
+                
+                NotificationCenter.default.post(name: NSNotification.Name("downloaded"), object: nil)
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
 // MARK: - CollectionView Delegate & Datasource
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -80,21 +108,11 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
         guard let movieTitle = movie.originalTitle ?? movie.originalName else {return}
         guard let titleOverview = titles[indexPath.row].overview else {return}
         
-        YoutubeSearch.get_YoutubeSearch(query: movieTitle + " trailer") { [weak self] result in
-            guard let self else {return}
-                  switch result {
-                  case .success(let videoElement):
-                    
-                     let moviePreview = MoviePreview(title: movieTitle, titleOverview: titleOverview, youtubeView: videoElement)
-                      
-                      self.delegate?.collectionViewTableViewCellDidTap(self, model: moviePreview)
-                      
-                  case .failure(let error):
-                      print(error.localizedDescription)
-                  }
-              }
+        getMoviePreview(movieTitle: movieTitle, titleOverview: titleOverview)
+
+        
     }
-    
+  
     func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemsAt indexPaths: [IndexPath], point: CGPoint) -> UIContextMenuConfiguration? {
         
         let config = UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { _ in
@@ -103,8 +121,8 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
                                          subtitle: nil,
                                          image: nil,
                                          identifier: nil,
-                                         discoverabilityTitle: nil, state: .off) { _ in
-                print("Download")
+                                         discoverabilityTitle: nil, state: .off) { [weak self] _ in
+                self?.downloadMovieAt(indexPath: indexPaths[0])
             }
             return UIMenu(title: "", image: nil, identifier: nil, options: .displayInline, children: [downloadAtion])
         }
