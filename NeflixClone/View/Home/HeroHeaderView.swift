@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HeroHeaderView: UIView {
     
@@ -85,4 +86,9 @@ class HeroHeaderView: UIView {
 
     }
     
+    func configureHeaderWithMovie(with model: Movie){
+        guard let image = model.posterPath else { return }
+        guard let url = "https://image.tmdb.org/t/p/w500\(image)".asUrl else {return}
+        imageView.sd_setImage(with: url)
+    }
 }

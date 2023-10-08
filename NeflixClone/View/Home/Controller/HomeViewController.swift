@@ -6,11 +6,19 @@
 //
 
 import UIKit
+import KRProgressHUD
+
+enum Sections: Int {
+    case TrendingMovies = 0
+    case TrendingTV = 1
+    case Popular = 2
+    case UpcomingMovies = 3
+    case TopRated = 4
+}
 
 class HomeViewController: UIViewController {
     
-    let sectionTitles: [String] = ["Trending Movies","Trending TV","Popular","Upcoming Movies","Top Rated"]
-    
+  
     private let homeFeedTable: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
@@ -18,20 +26,29 @@ class HomeViewController: UIViewController {
         return table
     }()
     
+    let sectionTitles: [String] = ["Trending Movies","Trending TV","Popular","Upcoming Movies","Top Rated"]
+    private var randomTrendingMoview : Movie?
+    private var headerView: HeroHeaderView?
+    var tvService: TrendingTvProtocol?
     var homeViewModel: HomeViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpUI()
-        
+        tvService = TrendingTV()
         homeViewModel = HomeViewModel(service: TrendingMovies(), tvService: TrendingTV(), upComing_service: upComingMovies(), popular_service: PopularMovies(), topRated_service: TopRated())
-        
-        getMovies()
-        getTV()
-        getUpComing()
-        getPopular()
-        getTopRatedMovies()
+       
+
+       
+            getMovies()
+//            getTV()
+//            getUpComing()
+//            getPopular()
+//            getTopRatedMovies()
+       
+       
+       homeFeedTable.reloadData()
     }
     
     override func viewDidLayoutSubviews() {
@@ -42,15 +59,19 @@ class HomeViewController: UIViewController {
     private func setUpUI(){
         view.backgroundColor = .systemBackground
         configureTableView()
+        configureHeaderView()
         configureNavBar()
     }
     
     private func configureTableView(){
         view.addSubview(homeFeedTable)
-        let headerView = HeroHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
-        homeFeedTable.tableHeaderView = headerView
+        
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
+    }
+    private func configureHeaderView(){
+        headerView = HeroHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
+       homeFeedTable.tableHeaderView = headerView
     }
     
     private func configureNavBar(){
@@ -68,8 +89,12 @@ class HomeViewController: UIViewController {
         homeViewModel?.callFuncToGetTrendingMovies(completionHandler: { isFinished in
             if !isFinished {
                 //show indicator
+                print("//show indicator")
+                KRProgressHUD.show()
             }else{
                 //dissmiss
+                print("//dissmiss indicator")
+                KRProgressHUD.dismiss()
             }
         })
     }
@@ -78,8 +103,10 @@ class HomeViewController: UIViewController {
         homeViewModel?.callFuncToGetTrendingTV(completionHandler: { isFinished in
             if !isFinished {
                 //show indicator
+                KRProgressHUD.show()
             }else{
                 //dissmiss
+                KRProgressHUD.dismiss()
             }
         })
     }
@@ -88,8 +115,10 @@ class HomeViewController: UIViewController {
         homeViewModel?.callFuncToGetUpComing(completionHandler: { isFinished in
             if !isFinished {
                 //show indicator
+                KRProgressHUD.show()
             }else{
                 //dissmiss
+                KRProgressHUD.dismiss()
             }
         })
     }
@@ -98,8 +127,10 @@ class HomeViewController: UIViewController {
         homeViewModel?.callFuncToGetPopular(completionHandler: { isFinished in
             if !isFinished {
                 //show indicator
+                KRProgressHUD.show()
             }else{
                 //dissmiss
+                KRProgressHUD.dismiss()
             }
         })
     }
@@ -108,8 +139,10 @@ class HomeViewController: UIViewController {
         homeViewModel?.callFuncToGetTopRated(completionHandler: { isFinished in
             if !isFinished {
                 //show indicator
+                KRProgressHUD.show()
             }else{
                 //dissmiss
+                KRProgressHUD.dismiss()
             }
         })
     }
@@ -130,6 +163,46 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
             return UITableViewCell()
+        }
+        cell.delegate = self
+        switch indexPath.section {
+        case Sections.TrendingMovies.rawValue:
+            homeViewModel?.bindingMovieResult = { [weak self] movies in
+                guard let self else {return}
+                if let trendingMovies = movies{
+                    guard let randomMovie = trendingMovies.randomElement() else{return}
+                    self.randomTrendingMoview = randomMovie
+                    cell.configure(with: trendingMovies)
+                    guard let randomTrending = self.randomTrendingMoview else {return}
+                  self.headerView?.configureHeaderWithMovie(with: randomTrending)
+
+                }
+            }
+            
+        case Sections.TrendingTV.rawValue:
+           homeViewModel?.bindingResult = { [weak self] in
+               if let trendinTV = self?.homeViewModel?.trendinTV{
+                  //  print(trendinTV)
+                   cell.configure(with: trendinTV)
+                }
+              
+            }
+
+        case Sections.Popular.rawValue:
+            if let popularMovies = homeViewModel?.popularMovies{
+                cell.configure(with: popularMovies)
+            }
+        case Sections.UpcomingMovies.rawValue:
+            if let upComing = homeViewModel?.upComing{
+                cell.configure(with: upComing)
+            }
+        case Sections.TopRated.rawValue:
+            if let topRatedMovies = homeViewModel?.topRatedMovies{
+                cell.configure(with: topRatedMovies)
+            }
+        default:
+            return UITableViewCell()
+            
         }
         
         return cell
@@ -180,7 +253,22 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-
-
+// MARK: - CollectionViewTableViewCellDelegate
+extension HomeViewController: CollectionViewTableViewCellDelegate {
+    
+    func collectionViewTableViewCellDidTap(_ cell: CollectionViewTableViewCell, model: MoviePreview) {
+        
+        DispatchQueue.main.async { [weak self] in
+            let vc = VideoPreviewViewController()
+            vc.configureComponentsWithData(with: model)
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
+     
+    }
+    
+    
+    
+    
+}
 
 
