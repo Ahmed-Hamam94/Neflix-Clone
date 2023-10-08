@@ -23,8 +23,8 @@ class NetworkManager {
         let url = EndPoint.base_url + endPoint.path
         guard let urll = url.asUrl else{return nil}
         var urlRequest = URLRequest(url: urll)
-       // let headers = ["Content-Type": "application/json"]
-        let headers = [
+     //  let headers = ["Content-Type": "application/json"]
+      let headers = [
           "accept": "application/json",
           "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMjdiZTU4YjdmMDRlNzYzNTFjNTcxMGViZTljNGRhZiIsInN1YiI6IjY1MWIyMGQ5ZWE4NGM3MDE0ZWZjYzc5ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ubi5QwRHDm3uECr8G3-Z3Kj9z8WAidQhQ2ymiAM88pM"
         ]
@@ -72,6 +72,7 @@ class NetworkManager {
             }
             
             print("Response status code: \(response.statusCode)")
+
             DispatchQueue.main.async {
                 self.handleResponse(result: result, completion: completion)
             }
